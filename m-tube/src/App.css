@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #222;
+  color: rgb(245, 78, 78);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.fav{
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  border: 5px solid white;
+  border-radius: 6px;
+  color: tan;
+  margin: 5px;
+  padding: 5px 10px;
+  transition: transform 0.1s ease;
+}
+
+button:hover{
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: #222;
+  transform: scale(1.1);
+}
