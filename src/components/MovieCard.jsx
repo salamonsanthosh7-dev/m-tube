@@ -4,7 +4,8 @@ function MovieCard({ movie, addToFav }) {
   return (
     <div className="card">
       <img
-        src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
+        src={movie.poster_path ? `https://image.tmdb.org/t/p/w200${movie.poster_path}`
+        : "https://via.placeholder.com/200"}
         alt={movie.title}
       />
       <h3>{movie.title}</h3>
